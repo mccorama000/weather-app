@@ -1,6 +1,9 @@
 /********************
 YOUR STYLES
 *******************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* Get Weather Icons */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css");
 
@@ -8,12 +11,37 @@ YOUR STYLES
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background-image: url('https://unsplash.it/4104/2736?image=1067');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.city {
+    letter-spacing: 3px;
+}
+
+
+h1.city,
+h3.temp {
+   font-size: 4em; 
+   text-align: center;
+   color: rgba(0, 0, 0, .6);
 }
 
 main {
-    background: gray;
-    margin: 1em;
+    width: 600px;
+    height: 800px;
+    border-radius: 5%;
+    margin: 300px auto;
     padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
     
     /* flexbox */
     display: flex;
@@ -21,16 +49,18 @@ main {
 }
 
 section {
-    background: steelblue;
+     background: rgba(255, 255, 255, .4);
     padding: 1em;
     margin: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5%;
+
     
     /* flexbox as child   */
     flex: 1 0 200px;
     
     /* flexbox as parent   */
 }
-
 
 
 
@@ -44,9 +74,7 @@ MEDIA QUERIES
   and (min-width: 80em) { 
   
   /* Diagnostic Styling. */
-  body {
-       background: blue;
-  }
+
 
 }
 
@@ -58,9 +86,7 @@ MEDIA QUERIES
   and (min-width: 48em)  {
 
   /* Diagnostic Styling. */
-  body {
-       background: green;
-  }
+
 
 }
 
@@ -72,8 +98,5 @@ MEDIA QUERIES
   and (min-width: 20em) { 
 
   /* Diagnostic Styling. */
-	body {
-       background: red;
-	}
-	
+
 }
