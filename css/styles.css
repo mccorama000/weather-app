@@ -5,14 +5,13 @@ YOUR STYLES
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Get Weather Icons */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css");
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css");
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 body {
@@ -21,16 +20,26 @@ body {
     background-size: cover;
 }
 
+button {
+    background: rgba(255, 255, 255, .5);
+    transition: background .5s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, .5);
+    transition: background .5s;
+    color: white;
+}
+
 h1.city {
     letter-spacing: 3px;
 }
 
-
 h1.city,
 h3.temp {
-   font-size: 4em; 
-   text-align: center;
-   color: rgba(0, 0, 0, .6);
+    font-size: 4em;
+    text-align: center;
+    color: rgba(0, 0, 0, .6);
 }
 
 main {
@@ -41,62 +50,62 @@ main {
     padding: 1em;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-
-    
     /* flexbox */
     display: flex;
     flex-flow: row wrap;
 }
 
 section {
-     background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .4);
     padding: 1em;
     margin: 1em;
     font-family: 'Open Sans', sans-serif;
     border-radius: 5%;
-
-    
     /* flexbox as child   */
     flex: 1 0 200px;
-    
     /* flexbox as parent   */
 }
-
 
 
 /********************
 MEDIA QUERIES
 *******************/
+
+
 /* Desktop */
-@media screen /* 2560px = 160em */
-  and (max-width: 160em)
-  /* 1280px = 80em */
-  and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. */
 
+@media screen
+/* 2560px = 160em */
 
+and (max-width: 160em)
+/* 1280px = 80em */
+
+and (min-width: 80em) {
+    /* Diagnostic Styling. */
 }
+
 
 /* Tablet */
-@media screen 
-   /* 1279 = 79.9375em */  
-  and (max-width: 79.9375em)
-   /* 768px = 160em */
-  and (min-width: 48em)  {
 
-  /* Diagnostic Styling. */
+@media screen
+/* 1279 = 79.9375em */
 
+and (max-width: 79.9375em)
+/* 768px = 160em */
 
+and (min-width: 48em) {
+    /* Diagnostic Styling. */
 }
 
+
 /* Mobile */
+
 @media screen
-  /* 767px = 47.9375em */
-  and (max-width: 47.9375em)
-  /* 320px = 20em */
-  and (min-width: 20em) { 
+/* 767px = 47.9375em */
 
-  /* Diagnostic Styling. */
+and (max-width: 47.9375em)
+/* 320px = 20em */
 
+and (min-width: 20em) {
+    /* Diagnostic Styling. */
 }
